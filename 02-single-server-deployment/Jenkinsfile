@@ -20,7 +20,7 @@ pipeline {
                     which pytest || true
                     echo $PATH
                 '''
-                sh "/Users/jameszhao/Library/Python/3.9/pytest"
+                sh "/Users/jameszhao/Library/Python/3.9/bin/pytest"
             }
         }
 
