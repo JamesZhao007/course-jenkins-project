@@ -14,6 +14,12 @@ pipeline {
         }
         stage('Test') {
             steps {
+                sh '''
+                    whoami
+                    which python3 || true
+                    which pytest || true
+                    echo $PATH
+                '''
                 sh "/Users/jameszhao/Library/Python/3.9/pytest"
             }
         }
